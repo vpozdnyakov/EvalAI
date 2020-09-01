@@ -67,3 +67,8 @@ ssl/
 out/
 .idea_modules/
 
+gradebook.db
+autograded/user/problem/problem.ipynb
+release/problem/problem.ipynb
+source/problem/problem.ipynb
+submitted/user/problem/problem.ipynb

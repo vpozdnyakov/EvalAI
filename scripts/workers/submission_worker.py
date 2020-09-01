@@ -368,7 +368,7 @@ def run_submission(
     temp_run_dir = join(submission_data_dir, "run")
     create_dir(temp_run_dir)
 
-    stdout_file = join(temp_run_dir, "temp_stdout.txt")
+    stdout_file = join(temp_run_dir, "temp_stdout.html")
     stderr_file = join(temp_run_dir, "temp_stderr.txt")
 
     stdout = open(stdout_file, "a+")
@@ -404,7 +404,7 @@ def run_submission(
             with open(stdout_file, "r") as stdout:
                 stdout_content = stdout.read()
                 submission.stdout_file.save(
-                    "stdout.txt", ContentFile(stdout_content)
+                    "stdout.html", ContentFile(stdout_content)
                 )
             with open(stderr_file, "r") as stderr:
                 stderr_content = stderr.read()
@@ -562,7 +562,7 @@ def run_submission(
     # TODO :: see if two updates can be combine into a single update.
     with open(stdout_file, "r") as stdout:
         stdout_content = stdout.read()
-        submission.stdout_file.save("stdout.txt", ContentFile(stdout_content))
+        submission.stdout_file.save("stdout.html", ContentFile(stdout_content))
     if submission_status is Submission.FAILED:
         with open(stderr_file, "r") as stderr:
             stderr_content = stderr.read()
