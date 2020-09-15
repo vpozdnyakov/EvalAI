@@ -1,5 +1,6 @@
 matplotlib==2.2.3
-networkx==2.1
+networkx==2.5
+nbgrader==0.6.1
 pandas==0.25.3
 pycocotools==2.0.0
 scipy==1.1.0
