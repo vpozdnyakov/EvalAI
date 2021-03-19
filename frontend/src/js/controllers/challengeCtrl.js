@@ -7,7 +7,9 @@
         .controller('ChallengeCtrl', ChallengeCtrl);
 
     ChallengeCtrl.$inject = ['utilities', 'loaderService', '$scope', '$state', '$http', '$stateParams', '$rootScope', 'Upload', '$interval', '$mdDialog', 'moment', '$location', '$anchorScroll', '$timeout'];
-
+    
+    var timeout = 5*60*60*1000;
+    
     function ChallengeCtrl(utilities, loaderService, $scope, $state, $http, $stateParams, $rootScope, Upload, $interval, $mdDialog, moment, $location, $anchorScroll, $timeout) {
         var vm = this;
         vm.areSubmissionsFailing = false;
@@ -741,7 +743,7 @@
                 };
 
                 utilities.sendRequest(parameters);
-            }, 5000);
+            }, timeout);
         };
 
         vm.getLeaderboard = function(phaseSplitId) {
@@ -944,7 +946,7 @@
                     };
 
                     utilities.sendRequest(parameters);
-                }, 5000);
+                }, timeout);
             };
 
             vm.stopFetchingSubmissions = function() {
