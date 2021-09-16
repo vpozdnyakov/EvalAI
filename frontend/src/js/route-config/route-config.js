@@ -54,7 +54,7 @@
             name: "auth.signup",
             parent: "auth",
             url: "/signup",
-            templateUrl: baseUrl + "/web/auth/signup.html",
+            templateUrl: baseUrl + "/web/auth/login.html",
             title: 'SignUp',
             authpage: true
         };
