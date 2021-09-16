@@ -71,9 +71,9 @@
         var reset_password = {
             name: "auth.reset-password",
             parent: "auth",
-            url: "/reset-password",
-            templateUrl: baseUrl + "/web/auth/reset-password.html",
-            title: "Reset Password",
+            url: "/login",
+            templateUrl: baseUrl + "/web/auth/login.html",
+            title: 'Login',
             authpage: true
         };
 
