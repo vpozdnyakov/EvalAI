@@ -53,9 +53,9 @@
         var signup = {
             name: "auth.signup",
             parent: "auth",
-            url: "/signup",
+            url: "/login",
             templateUrl: baseUrl + "/web/auth/login.html",
-            title: 'SignUp',
+            title: 'Login',
             authpage: true
         };
 
