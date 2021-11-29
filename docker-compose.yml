@@ -36,6 +36,10 @@ services:
       - django
     volumes:
       - .:/code
+    deploy:
+      resources:
+        limits:
+          memory: 1gb
 
   nodejs:
     hostname: nodejs
