@@ -5,7 +5,7 @@ RUN apt-get update && \
 
 RUN pip install -U cffi service_identity cython==0.29 numpy==1.14.5
 RUN pip install -r worker.txt
-RUN pip install torch --no-cache-dir
+RUN pip install torch torchvision --no-cache-dir
 
 ADD . /code
 
