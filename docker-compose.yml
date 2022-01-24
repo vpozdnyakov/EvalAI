@@ -39,7 +39,7 @@ services:
     deploy:
       resources:
         limits:
-          memory: 1gb
+          memory: 2gb
 
   nodejs:
     hostname: nodejs
