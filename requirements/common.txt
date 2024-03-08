@@ -28,4 +28,4 @@ proc==0.10.1
 rstr==2.2.5
 sendgrid==5.6.0
 cryptography==3.3.2
-importlib-metadata==4.13.0
+importlib-metadata==4.8.3
