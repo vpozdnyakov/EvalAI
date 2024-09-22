@@ -15,7 +15,7 @@ ADD ./.eslintrc /code
 ADD ./karma.conf.js /code
 
 # Install Prerequisites
-RUN npm install -g bower gulp
+RUN npm install -g bower gulp@4.0.2
 
 RUN npm link gulp
 
